@@ -1,0 +1,314 @@
+cd /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl
+vlib work
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:00:53 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(11): (vcom-1136) Unknown identifier "can_data_change".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(11): Bad resolution function (STD_LOGIC) for type (error).
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(11): near "out": (vcom-1576) expecting ';' or ')'.
+# End time: 22:00:53 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:01:35 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(11): (vcom-1136) Unknown identifier "can_data_change".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(11): Bad resolution function (STD_LOGIC) for type (error).
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(11): near ":": (vcom-1576) expecting ';' or ')'.
+# End time: 22:01:35 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:07 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# -- Compiling architecture RTL of gen_sclk
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(18): near "90": (vcom-1576) expecting ';'.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(19): near "500": (vcom-1576) expecting ';'.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(20): (vcom-1136) Unknown identifier "sclk_half_period".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(20): (vcom-1591) Bad expression in right bound of range expression.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(20): Type error in range expression.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(36): (vcom-1136) Unknown identifier "sclk_half_period".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(36): (vcom-1590) Bad expression in right operand of infix expression '='.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(36): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(40): (vcom-1136) Unknown identifier "sclk_half_period".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(40): (vcom-1590) Bad expression in left operand of infix expression '-'.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(40): (vcom-1590) Bad expression in right operand of infix expression '='.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(40): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(42): (vcom-1136) Unknown identifier "sclk_half_period".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(42): (vcom-1590) Bad expression in right operand of infix expression '<'.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(42): (vcom-1590) Bad expression in left operand of infix expression 'and'.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(42): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(51): (vcom-1136) Unknown identifier "sclk_half_period".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(51): (vcom-1590) Bad expression in left operand of infix expression '-'.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(51): (vcom-1590) Bad expression in right operand of infix expression '='.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(51): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(53): (vcom-1136) Unknown identifier "snd_cond2".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(65): (vcom-1136) Unknown identifier "sclk_half_period".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(65): Type error resolving infix expression ">=" as type std.STANDARD.BOOLEAN.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(70): (vcom-1136) Unknown identifier "sclk_half_period".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(70): (vcom-1136) Unknown identifier "data_hold".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(70): (vcom-1590) Bad expression in right operand of infix expression '='.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(70): (vcom-1590) Bad expression in right operand of infix expression 'and'.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(70): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Note: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(71): VHDL Compiler exiting
+# End time: 22:02:07 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 28, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:03:11 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# -- Compiling architecture RTL of gen_sclk
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(53): (vcom-1136) Unknown identifier "snd_cond2".
+# ** Note: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(71): VHDL Compiler exiting
+# End time: 22:03:11 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:03:53 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# -- Compiling architecture RTL of gen_sclk
+# End time: 22:03:53 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:03:59 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity test_gen_sclk
+# -- Compiling architecture RTL of test_gen_sclk
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl(14): (vcom-1136) Unknown identifier "can_data_change".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl(14): Bad resolution function (STD_LOGIC) for type (error).
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl(14): near "out": (vcom-1576) expecting ';' or ')'.
+# End time: 22:03:59 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:04:33 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity test_gen_sclk
+# -- Compiling architecture RTL of test_gen_sclk
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl(14): near "out": (vcom-1576) expecting ':'.
+# End time: 22:04:33 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:04:54 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity test_gen_sclk
+# -- Compiling architecture RTL of test_gen_sclk
+# End time: 22:04:54 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.test_gen_sclk
+# vsim work.test_gen_sclk 
+# Start time: 22:05:17 on May 18,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_gen_sclk(rtl)
+# Loading work.gen_sclk(rtl)
+add wave -position insertpoint  \
+sim:/test_gen_sclk/clk \
+sim:/test_gen_sclk/rst \
+sim:/test_gen_sclk/ena \
+sim:/test_gen_sclk/sclk \
+sim:/test_gen_sclk/sdat \
+sim:/test_gen_sclk/can_data_change
+run -all
+# ** Failure: end.
+#    Time: 250 us  Iteration: 0  Process: /test_gen_sclk/line__35 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Break in Process line__35 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl line 37
+add wave -position insertpoint  \
+sim:/test_gen_sclk/U1/fms_status
+add wave -position insertpoint  \
+sim:/test_gen_sclk/U1/sclk_cnt
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Failure: end.
+#    Time: 250 us  Iteration: 0  Process: /test_gen_sclk/line__35 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Break in Process line__35 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl line 37
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:15:55 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# -- Compiling architecture RTL of gen_sclk
+# End time: 22:15:55 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.gen_sclk(rtl)
+run -all
+# ** Failure: end.
+#    Time: 250 us  Iteration: 0  Process: /test_gen_sclk/line__35 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Break in Process line__35 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl line 37
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:34:37 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# -- Compiling architecture RTL of gen_sclk
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(44): near "when": (vcom-1576) expecting END.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(55): near "when": (vcom-1576) expecting END.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(59): near "else": (vcom-1576) expecting END.
+# End time: 22:34:37 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:35:10 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# -- Compiling architecture RTL of gen_sclk
+# End time: 22:35:10 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.gen_sclk(rtl)
+run -all
+# ** Failure: end.
+#    Time: 250 us  Iteration: 0  Process: /test_gen_sclk/line__35 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Break in Process line__35 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl line 37
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:41:32 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# -- Compiling architecture RTL of gen_sclk
+# End time: 22:41:32 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.gen_sclk(rtl)
+run -all
+# ** Failure: end.
+#    Time: 250 us  Iteration: 0  Process: /test_gen_sclk/line__35 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Break in Process line__35 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl line 37
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:44:30 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# -- Compiling architecture RTL of gen_sclk
+# End time: 22:44:30 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.gen_sclk(rtl)
+run -all
+# ** Failure: end.
+#    Time: 250 us  Iteration: 0  Process: /test_gen_sclk/line__35 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Break in Process line__35 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl line 37
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:46:18 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# -- Compiling architecture RTL of gen_sclk
+# End time: 22:46:18 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.gen_sclk(rtl)
+run -all
+# ** Failure: end.
+#    Time: 250 us  Iteration: 0  Process: /test_gen_sclk/line__35 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Break in Process line__35 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl line 37
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:52 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# -- Compiling architecture RTL of gen_sclk
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(72): (vcom-1136) Unknown identifier "end_cond1".
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(72): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl(76): VHDL Compiler exiting
+# End time: 22:56:52 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:57:10 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity gen_sclk
+# -- Compiling architecture RTL of gen_sclk
+# End time: 22:57:10 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.gen_sclk(rtl)
+run -all
+# ** Failure: end.
+#    Time: 250 us  Iteration: 0  Process: /test_gen_sclk/line__35 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Break in Process line__35 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl line 37
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:03:24 on May 18,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity test_gen_sclk
+# -- Compiling architecture RTL of test_gen_sclk
+# End time: 23:03:24 on May 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.test_gen_sclk(rtl)
+run -all
+# ** Failure: end.
+#    Time: 250 us  Iteration: 0  Process: /test_gen_sclk/line__35 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+# Break in Process line__35 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl line 37
+# End time: 23:04:43 on May 18,2021, Elapsed time: 0:59:26
+# Errors: 1, Warnings: 0
