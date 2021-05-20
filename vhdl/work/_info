@@ -10,10 +10,10 @@ z2
 cModel Technology
 Z0 d/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl
 Egen_sclk
-Z1 w1621346226
+Z1 w1621434954
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 13
+!i122 21
 R0
 Z4 8/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
 Z5 F/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
@@ -23,9 +23,9 @@ VMzjhAk7WgNS6H?5TjLcP`3
 !s100 =MdA^JniNQJaB:EgE6Go80
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1621346230
+Z7 !s110 1621434964
 !i10b 1
-Z8 !s108 1621346230.000000
+Z8 !s108 1621434964.000000
 Z9 !s90 -reportprogress|300|-work|work|/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl|
 Z10 !s107 /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl|
 !i113 1
@@ -34,12 +34,12 @@ Z12 tExplicit 1 CvgOpt 0
 Artl
 R2
 R3
-DEx4 work 8 gen_sclk 0 22 MzjhAk7WgNS6H?5TjLcP`3
-!i122 13
-l23
-L15 62
-VjJgLEZ]=ERIZeMb=RF?DM3
-!s100 ARfiD?h4GSY?FiKOLYkLk3
+Z13 DEx4 work 8 gen_sclk 0 22 MzjhAk7WgNS6H?5TjLcP`3
+!i122 21
+l22
+L15 63
+V5;`idaU2S;W8AKbR>HR<[2
+!s100 2:Zz]fZki[zUI3:LRdB1;0
 R6
 32
 R7
@@ -51,43 +51,43 @@ R10
 R11
 R12
 Etest_gen_sclk
-Z13 w1621346592
+Z14 w1621346592
 R2
 R3
 !i122 14
 R0
-Z14 8/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
-Z15 F/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+Z15 8/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+Z16 F/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
 l0
 L4 1
 V?N5Imd5WhblXWjPb78LfG0
 !s100 Fk2DLQT^0III;B6K9Ym]<2
 R6
 32
-Z16 !s110 1621346604
+Z17 !s110 1621346604
 !i10b 1
-Z17 !s108 1621346604.000000
-Z18 !s90 -reportprogress|300|-work|work|/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl|
-Z19 !s107 /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl|
+Z18 !s108 1621346604.000000
+Z19 !s90 -reportprogress|300|-work|work|/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl|
+Z20 !s107 /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl|
 !i113 1
 R11
 R12
 Artl
 R2
 R3
-Z20 DEx4 work 13 test_gen_sclk 0 22 ?N5Imd5WhblXWjPb78LfG0
+DEx4 work 13 test_gen_sclk 0 22 ?N5Imd5WhblXWjPb78LfG0
 !i122 14
 l24
-Z21 L7 33
+L7 33
 VFF<VGO6A;e]7]9l9AIk<W2
 !s100 1EaUHR=hBmQ[dggY1I9kC1
 R6
 32
-R16
-!i10b 1
 R17
+!i10b 1
 R18
 R19
+R20
 !i113 1
 R11
 R12

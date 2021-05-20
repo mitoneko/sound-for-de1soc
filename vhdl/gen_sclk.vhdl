@@ -19,8 +19,24 @@ architecture RTL of gen_sclk is
     constant start_setup: integer := 60;
     constant sclk_half_period: integer := 500;
     signal sclk_cnt: integer range 0 to sclk_half_period * 2;
-    signal can_data_change_status: std_logic;
 begin
+    -- sclk counter
+    process(clk)
+    begin
+        if (clk'event and clk='1') then
+            if (fms_status = idle) then
+                sclk_cnt <= 0;
+            elsif (sclk_cnt < sclk_half_period and sclk = '0') then
+                sclk_cnt <= sclk_cnt;
+            elsif (sclk_cnt = sclk_half_period * 2 - 1) then
+                sclk_cnt <= 0;
+            else
+                sclk_cnt <= sclk_cnt + 1;
+            end if;
+        end if;
+    end process;
+
+    -- FMS for control sclk and generate start and end condition
     process(clk)
     begin
         if (clk'event and clk='1') then
@@ -29,37 +45,22 @@ begin
             else
                 case fms_status is
                     when idle =>
-                        sclk_cnt <= 0;
                         if (ena = '1') then 
                             fms_status <= start_cond1;
                         end if;
                     when start_cond1 =>
-                        sclk_cnt <= sclk_cnt + 1;
-                        if (sclk_cnt = sclk_half_period - (start_setup + 1)) then
+                        if (sclk_cnt = start_setup) then
                             fms_status <= start_cond2;
                         end if;
                     when start_cond2 =>
-                        sclk_cnt <= sclk_cnt + 1;
-                        if (sclk_cnt = sclk_half_period + data_hold) then
+                        if (sclk_cnt = sclk_half_period + (data_hold / 2)) then
                             fms_status <= run;
                         end if;
                     when run =>
-                        if (sclk_cnt = sclk_half_period * 2 - 1) then
-                            sclk_cnt <= 0;
-                        elsif (sclk_cnt < sclk_half_period  and sclk = '0') then
-                            sclk_cnt <= sclk_cnt;
-                        else  
-                            sclk_cnt <= sclk_cnt + 1;
-                        end if;
                         if (ena = '0') then
                             fms_status <= end_cond;
                         end if;
                     when end_cond =>
-                        if (sclk_cnt = sclk_half_period * 2 - 1) then
-                            sclk_cnt <= 0;
-                        else
-                            sclk_cnt <= sclk_cnt + 1;
-                        end if;
                         if (sclk_cnt = start_setup) then
                             fms_status <= idle;
                         end if;
@@ -67,10 +68,10 @@ begin
             end if;
         end if;
     end process;
+    
     sclk <= '0' when sclk_cnt >= sclk_half_period else 'Z';
     sdat <= '0' when fms_status = start_cond2 else
             '0' when fms_status = end_cond else
             'Z';
-    can_data_change_status <= '1' when fms_status = start_cond2 or fms_status = run else '0';
-    can_data_change <= '1' when can_data_change_status = '1' and sclk_cnt = sclk_half_period+data_hold else '0';
+    can_data_change <= '1' when fms_status = run and sclk_cnt = sclk_half_period+data_hold else '0';
 end RTL;
