@@ -23,6 +23,8 @@ architecture RTL of test_gen_sclk is
     signal can_data_change: std_logic;
 begin
     U1: gen_sclk port map(clk, rst, ena, sclk, sdat, can_data_change);
+    sclk <= 'H';
+    sdat <= 'H';
 
     process begin
         clk <= not clk;

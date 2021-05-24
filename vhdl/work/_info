@@ -10,10 +10,10 @@ z2
 cModel Technology
 Z0 d/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl
 Egen_sclk
-Z1 w1621434954
+Z1 w1621521512
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 21
+!i122 31
 R0
 Z4 8/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
 Z5 F/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
@@ -23,9 +23,9 @@ VMzjhAk7WgNS6H?5TjLcP`3
 !s100 =MdA^JniNQJaB:EgE6Go80
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1621434964
+Z7 !s110 1621687480
 !i10b 1
-Z8 !s108 1621434964.000000
+Z8 !s108 1621687480.000000
 Z9 !s90 -reportprogress|300|-work|work|/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl|
 Z10 !s107 /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl|
 !i113 1
@@ -34,12 +34,12 @@ Z12 tExplicit 1 CvgOpt 0
 Artl
 R2
 R3
-Z13 DEx4 work 8 gen_sclk 0 22 MzjhAk7WgNS6H?5TjLcP`3
-!i122 21
+DEx4 work 8 gen_sclk 0 22 MzjhAk7WgNS6H?5TjLcP`3
+!i122 31
 l22
-L15 63
-V5;`idaU2S;W8AKbR>HR<[2
-!s100 2:Zz]fZki[zUI3:LRdB1;0
+L15 61
+VLDTJW001QiQkZNHNCL4OL2
+!s100 3k@HL8KDjS90PJ@;jnlBb0
 R6
 32
 R7
@@ -50,25 +50,66 @@ R10
 !i113 1
 R11
 R12
-Etest_gen_sclk
-Z14 w1621346592
+Ei2cmaster
+Z13 w1621693062
 R2
 R3
-!i122 14
+!i122 38
 R0
-Z15 8/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
-Z16 F/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+Z14 8/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
+Z15 F/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
+l0
+L4 1
+VkSdlLf68BK=>TPTa<laig3
+!s100 2GPhk:69PE>WZ8M?HJQ3U0
+R6
+32
+Z16 !s110 1621693096
+!i10b 1
+Z17 !s108 1621693096.000000
+Z18 !s90 -reportprogress|300|-work|work|/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl|
+Z19 !s107 /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 9 i2cmaster 0 22 kSdlLf68BK=>TPTa<laig3
+!i122 38
+l51
+L16 151
+VP;R[<VSnNOIR9Sfagz3X21
+!s100 C_bW_3b>WFI:[<2ZXZNGR2
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Etest_gen_sclk
+Z20 w1621521722
+R2
+R3
+!i122 23
+Z21 d/home/mito/develop/fpga/de1soc/project/sound/vhdl
+Z22 8/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
+Z23 F/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl
 l0
 L4 1
 V?N5Imd5WhblXWjPb78LfG0
 !s100 Fk2DLQT^0III;B6K9Ym]<2
 R6
 32
-Z17 !s110 1621346604
+Z24 !s110 1621521736
 !i10b 1
-Z18 !s108 1621346604.000000
-Z19 !s90 -reportprogress|300|-work|work|/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl|
-Z20 !s107 /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl|
+Z25 !s108 1621521736.000000
+Z26 !s90 -reportprogress|300|-work|work|/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl|
+Z27 !s107 /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_sclk.vhdl|
 !i113 1
 R11
 R12
@@ -76,18 +117,59 @@ Artl
 R2
 R3
 DEx4 work 13 test_gen_sclk 0 22 ?N5Imd5WhblXWjPb78LfG0
-!i122 14
+!i122 23
 l24
-L7 33
-VFF<VGO6A;e]7]9l9AIk<W2
-!s100 1EaUHR=hBmQ[dggY1I9kC1
+L7 35
+Vf47ZaJUE4eTT_NgOVRh7n1
+!s100 Cb>a42lZbo<I71j3RdkjO2
 R6
 32
-R17
+R24
 !i10b 1
-R18
-R19
-R20
+R25
+R26
+R27
+!i113 1
+R11
+R12
+Etest_i2c_master
+Z28 w1621693073
+R2
+R3
+!i122 39
+R0
+Z29 8/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
+Z30 F/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
+l0
+L4 1
+V4_d8ci^SU6=RNV37@b@>g3
+!s100 ?mi3VXddPSkWHj;KdH85P0
+R6
+32
+Z31 !s110 1621693106
+!i10b 1
+Z32 !s108 1621693106.000000
+Z33 !s90 -reportprogress|300|-work|work|/windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl|
+Z34 !s107 /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl|
+!i113 1
+R11
+R12
+Asim
+R2
+R3
+Z35 DEx4 work 15 test_i2c_master 0 22 4_d8ci^SU6=RNV37@b@>g3
+!i122 39
+l33
+Z36 L7 80
+Z37 VW0f]?nbB@U:g9@acR535k1
+Z38 !s100 ke4Q;c864doLLnjTWR_5z3
+R6
+32
+R31
+!i10b 1
+R32
+R33
+R34
 !i113 1
 R11
 R12

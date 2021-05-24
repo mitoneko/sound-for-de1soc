@@ -26,11 +26,9 @@ begin
         if (clk'event and clk='1') then
             if (fms_status = idle) then
                 sclk_cnt <= 0;
-            elsif (sclk_cnt < sclk_half_period and sclk = '0') then
-                sclk_cnt <= sclk_cnt;
             elsif (sclk_cnt = sclk_half_period * 2 - 1) then
                 sclk_cnt <= 0;
-            else
+            elsif (not (sclk_cnt < sclk_half_period and To_X01(sclk) = '0')) then
                 sclk_cnt <= sclk_cnt + 1;
             end if;
         end if;
