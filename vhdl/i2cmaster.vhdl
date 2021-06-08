@@ -9,7 +9,9 @@ entity i2cmaster is
             load:   in  std_logic;
             addr:   in  std_logic_vector(6 downto 0);
             data:   in  std_logic_vector(8 downto 0);
-            busy:   out std_logic
+            busy:   out std_logic;
+            err:    out std_logic;
+            err_rst: in std_logic
             );
 end i2cmaster;
 
@@ -18,6 +20,7 @@ architecture RTL of i2cmaster is
        port (   clk:    in      std_logic;  -- master clock(100MHz)
                 rst:    in      std_logic;  
                 ena:    in      std_logic; 
+                busy:   out     std_logic;
                 sclk:   inout   std_logic;
                 sdat:   out     std_logic;  -- for start and stop condition
                 can_data_change: out std_logic
@@ -27,6 +30,7 @@ architecture RTL of i2cmaster is
     signal can_data_change: std_logic;
     signal data_hi, data_lo : std_logic_vector(7 downto 0);
     signal sclk_ena: std_logic;
+    signal sclk_busy: std_logic;
     constant i2c_address: std_logic_vector(6 downto 0) := "0011010";
     
     -- shift register
@@ -45,11 +49,14 @@ architecture RTL of i2cmaster is
     -- i2c control
     type fms_i2c_master_status_t is 
         (idle, address_send1, address_send2, address_ack, data_hi_send1, data_hi_send2,
-        data_hi_ack, data_lo_send1, data_lo_send2, data_lo_ack, end_seq);
+        data_hi_ack, data_lo_send1, data_lo_send2, data_lo_ack, end_seq, err_seq);
     signal fms_i2c_master_status: fms_i2c_master_status_t;
 
+    -- error register
+    signal err_reg: std_logic;
 begin
-    U1: gen_sclk port map(clk=>clk, rst=>rst, ena=>sclk_ena , sclk=>sclk, sdat=>sdat, can_data_change=>can_data_change);
+    U1: gen_sclk port map(clk=>clk, rst=>rst, ena=>sclk_ena , busy=>sclk_busy, 
+                          sclk=>sclk, sdat=>sdat, can_data_change=>can_data_change);
     data_hi <= addr & data(8);
     data_lo <= data(7 downto 0);
 
@@ -57,24 +64,28 @@ begin
     process(clk)
     begin
         if (clk'event and clk='1') then
-            case fms_shift_reg_stat is
-                when idle =>
-                    shift_cnt <= 0;
-                    if (shift_enable = '1') then
-                        fms_shift_reg_stat <= reg_load;
-                    end if;
-                when reg_load =>
-                    shift_reg <= shift_data;
-                    fms_shift_reg_stat <= shift;
-                when shift =>
-                    if (shift_cnt = 9) then
-                        fms_shift_reg_stat <= idle;
-                    elsif (can_data_change = '1') then
-                        send_bit <= shift_reg(7);
-                        shift_reg <= shift_reg(6 downto 0) & "0";
-                        shift_cnt <= shift_cnt + 1;
-                    end if;
-            end case;
+            if (rst = '1') then
+                fms_shift_reg_stat <= idle;
+            else
+                case fms_shift_reg_stat is
+                    when idle =>
+                        shift_cnt <= 0;
+                        if (shift_enable = '1') then
+                            fms_shift_reg_stat <= reg_load;
+                        end if;
+                    when reg_load =>
+                        shift_reg <= shift_data;
+                        fms_shift_reg_stat <= shift;
+                    when shift =>
+                        if (shift_cnt = 9) then
+                            fms_shift_reg_stat <= idle;
+                        elsif (can_data_change = '1') then
+                            send_bit <= shift_reg(7);
+                            shift_reg <= shift_reg(6 downto 0) & "0";
+                            shift_cnt <= shift_cnt + 1;
+                        end if;
+                end case;
+            end if;
         end if;
     end process;
     
@@ -96,7 +107,7 @@ begin
             else
                 case fms_i2c_master_status is
                     when idle =>
-                        if (load = '1') then
+                        if ((load = '1') and (sclk_busy = '0') and (err_reg = '0')) then
                             shift_data <= i2c_address & '0';
                             fms_i2c_master_status <= address_send1;
                         end if;
@@ -112,7 +123,7 @@ begin
                                 shift_data <= data_hi;
                                 fms_i2c_master_status <= data_hi_send1;
                             else
-                                fms_i2c_master_status <= idle;
+                                fms_i2c_master_status <= err_seq;
                             end if;
                         end if;
                     when data_hi_send1 =>
@@ -127,7 +138,7 @@ begin
                                 shift_data <= data_lo;
                                 fms_i2c_master_status <= data_lo_send1;
                             else
-                                fms_i2c_master_status <= idle;
+                                fms_i2c_master_status <= err_seq;
                             end if;
                         end if;
                     when data_lo_send1 =>
@@ -141,26 +152,41 @@ begin
                             if (To_X01(sdat) = '0') then
                                 fms_i2c_master_status <= end_seq;
                             else
-                                fms_i2c_master_status <= idle;
+                                fms_i2c_master_status <= err_seq;
                             end if;
                         end if;
                     when end_seq =>
                         if (can_data_change = '1') then
                             fms_i2c_master_status <= idle;
                         end if;
+                    when err_seq =>
+                        fms_i2c_master_status <= idle;
                 end case;
             end if;
         end if;
     end process;
+
+    process(clk)
+    begin
+        if (clk'event and clk='1') then
+            if (fms_i2c_master_status = err_seq) then
+                err_reg <= '1';
+            elsif (err_rst or rst) then
+                err_reg <= '0';
+            end if;
+        end if;
+    end process;
+    
     shift_enable <= '1' when fms_i2c_master_status = address_send1 else
                     '1' when fms_i2c_master_status = data_hi_send1 else
                     '1' when fms_i2c_master_status = data_lo_send1 else
                     '0';
     sclk_ena <= '1' when fms_i2c_master_status /= idle else '0';
-    busy <= '1' when fms_i2c_master_status /= idle else '0';
+    busy <= '1' when (fms_i2c_master_status /= idle) or (sclk_busy = '1') else '0';
     sdat <= send_bit when fms_i2c_master_status = address_send2 else
             send_bit when fms_i2c_master_status = data_hi_send2 else
             send_bit when fms_i2c_master_status = data_lo_send2 else
             'Z';
+    err <= '1' when err_reg='1' else '0';
 
 end RTL;

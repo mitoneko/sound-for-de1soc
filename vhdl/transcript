@@ -1,401 +1,191 @@
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:32:41 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl 
+# Start time: 16:18:40 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity i2cmaster
-# -- Compiling architecture RTL of i2cmaster
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(33): (vcom-1294) Declaration with designator "load" already exists in this region.
-# ** =====> Prior declaration of "load" is at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(9).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(49): (vcom-1136) Unknown identifier "fms_i2c_master_status".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(74): (vcom-1136) Unknown identifier "dwonto".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(74): near "0": (vcom-1576) expecting ')'.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(95): Enumeration literal "idle" is not of type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(97): (vcom-1489) Case expression must be of a discrete type.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(98): Enumeration literal "idle" is not of type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(99): (vcom-1581) No feasible entries for infix operator '='.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(99): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(101): (vcom-1136) Unknown identifier "address_send1".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(103): Enumeration literal "adress_send1" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(104): (vcom-1136) Unknown identifier "address_send2".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(105): Enumeration literal "adress_send2" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(107): Enumeration literal "adress_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(109): Enumeration literal "adress_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(113): Enumeration literal "data_hi_send1" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(115): Enumeration literal "idle" is not of type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(118): Enumeration literal "data_hi_send1" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(119): Enumeration literal "data_hi_send2" is type fms_i2c_master_status_t; expecting type fms_shift_reg_status_t.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(120): Enumeration literal "data_hi_send2" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(122): Enumeration literal "data_hi_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(124): Enumeration literal "data_hi_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(128): Enumeration literal "data_lo_send1" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(130): Enumeration literal "idle" is not of type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(133): Enumeration literal "data_lo_send1" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(134): Enumeration literal "data_lo_send2" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(135): Enumeration literal "data_lo_send2" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(137): Enumeration literal "data_lo_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(139): Enumeration literal "data_lo_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(141): Enumeration literal "idle" is not of type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(146): near "end": (vcom-1576) expecting ';'.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(147): (vcom-1136) Unknown identifier "address_send1".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(147): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(147): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(148): (vcom-1581) No feasible entries for infix operator '='.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(148): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(148): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(149): (vcom-1581) No feasible entries for infix operator '='.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(149): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(149): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(151): (vcom-1581) No feasible entries for infix operator '/='.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(151): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(151): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(152): (vcom-1581) No feasible entries for infix operator '/='.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(152): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(152): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(154): near "RTL": (vcom-1576) expecting PROCESS.
-# End time: 21:32:41 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 47, Warnings: 0
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
+# -- Compiling entity gen_square
+# -- Compiling architecture RTL of gen_square
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd(13): near "clk_cnt": (vcom-1576) expecting BEGIN.
+# End time: 16:18:40 on Jun 06,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:34:28 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl 
+# Start time: 16:19:31 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity i2cmaster
-# -- Compiling architecture RTL of i2cmaster
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(49): (vcom-1136) Unknown identifier "fms_i2c_master_status".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(74): (vcom-1136) Unknown identifier "dwonto".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(74): near "0": (vcom-1576) expecting ')'.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(95): Enumeration literal "idle" is not of type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(97): (vcom-1489) Case expression must be of a discrete type.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(98): Enumeration literal "idle" is not of type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(101): (vcom-1136) Unknown identifier "address_send1".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(103): Enumeration literal "adress_send1" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(104): (vcom-1136) Unknown identifier "address_send2".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(105): Enumeration literal "adress_send2" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(107): Enumeration literal "adress_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(109): Enumeration literal "adress_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(113): Enumeration literal "data_hi_send1" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(115): Enumeration literal "idle" is not of type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(118): Enumeration literal "data_hi_send1" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(119): Enumeration literal "data_hi_send2" is type fms_i2c_master_status_t; expecting type fms_shift_reg_status_t.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(120): Enumeration literal "data_hi_send2" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(122): Enumeration literal "data_hi_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(124): Enumeration literal "data_hi_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(128): Enumeration literal "data_lo_send1" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(130): Enumeration literal "idle" is not of type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(133): Enumeration literal "data_lo_send1" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(134): Enumeration literal "data_lo_send2" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(135): Enumeration literal "data_lo_send2" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(137): Enumeration literal "data_lo_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(139): Enumeration literal "data_lo_ack" is type fms_i2c_master_status_t; expecting type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(141): Enumeration literal "idle" is not of type (error).
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(146): near "end": (vcom-1576) expecting ';'.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(147): (vcom-1136) Unknown identifier "address_send1".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(147): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(147): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(148): (vcom-1581) No feasible entries for infix operator '='.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(148): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(148): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(149): (vcom-1581) No feasible entries for infix operator '='.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(149): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(149): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(151): (vcom-1581) No feasible entries for infix operator '/='.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(151): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(151): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(152): (vcom-1581) No feasible entries for infix operator '/='.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(152): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(152): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(154): near "RTL": (vcom-1576) expecting PROCESS.
-# End time: 21:34:28 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 44, Warnings: 0
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:35:13 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity i2cmaster
-# -- Compiling architecture RTL of i2cmaster
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(74): (vcom-1136) Unknown identifier "dwonto".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(74): near "0": (vcom-1576) expecting ')'.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(101): (vcom-1136) Unknown identifier "address_send1".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(104): (vcom-1136) Unknown identifier "address_send2".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(119): Enumeration literal "data_hi_send2" is type fms_i2c_master_status_t; expecting type fms_shift_reg_status_t.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(146): near "end": (vcom-1576) expecting ';'.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(147): (vcom-1136) Unknown identifier "address_send1".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(147): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(147): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(148): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(149): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(151): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(152): Illegal sequential statement.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl(154): near "RTL": (vcom-1576) expecting PROCESS.
-# End time: 21:35:13 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 14, Warnings: 0
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:41:13 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity i2cmaster
-# -- Compiling architecture RTL of i2cmaster
-# End time: 21:41:13 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:41:21 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity test_i2c_master
-# -- Compiling architecture SIM of test_i2c_master
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl(33): (vcom-1136) Unknown identifier "busy".
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl(67): near "5": (vcom-1576) expecting ';'.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl(72): near "5": (vcom-1576) expecting ';'.
-# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl(77): near "5": (vcom-1576) expecting ';'.
-# ** Error (suppressible): /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl(31): (vcom-1272) Length of expected is 9; length of actual is 8.
-# ** Error (suppressible): /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl(59): (vcom-1272) Length of expected is 9; length of actual is 8.
-# ** Note: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl(85): VHDL Compiler exiting
-# End time: 21:41:21 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:42:45 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity test_i2c_master
-# -- Compiling architecture SIM of test_i2c_master
-# ** Error (suppressible): /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl(31): (vcom-1272) Length of expected is 9; length of actual is 8.
-# ** Error (suppressible): /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl(59): (vcom-1272) Length of expected is 9; length of actual is 8.
-# ** Note: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl(85): VHDL Compiler exiting
-# End time: 21:42:45 on May 22,2021, Elapsed time: 0:00:00
+# -- Compiling entity gen_square
+# -- Compiling architecture RTL of gen_square
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd(32): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd(32): Type error resolving infix expression "+" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd(36): VHDL Compiler exiting
+# End time: 16:19:31 on Jun 06,2021, Elapsed time: 0:00:00
 # Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:44:19 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl 
+# Start time: 16:22:54 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity test_i2c_master
-# -- Compiling architecture SIM of test_i2c_master
-# End time: 21:44:19 on May 22,2021, Elapsed time: 0:00:00
+# -- Loading package NUMERIC_STD
+# -- Compiling entity gen_square
+# -- Compiling architecture RTL of gen_square
+# End time: 16:22:55 on Jun 06,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:44:40 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/gen_sclk.vhdl 
+# Start time: 16:23:11 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity gen_sclk
-# -- Compiling architecture RTL of gen_sclk
-# End time: 21:44:40 on May 22,2021, Elapsed time: 0:00:00
+# -- Compiling entity test_gen_square
+# -- Compiling architecture SIM of test_gen_square
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd(16): near "clk": (vcom-1576) expecting BEGIN.
+# End time: 16:23:11 on Jun 06,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:24:03 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity test_gen_square
+# -- Compiling architecture SIM of test_gen_square
+# End time: 16:24:03 on Jun 06,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.test_i2c_master
-# vsim work.test_i2c_master 
-# Start time: 21:44:52 on May 22,2021
+vsim work.test_gen_square
+# vsim work.test_gen_square 
+# Start time: 16:24:28 on Jun 06,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.test_i2c_master(sim)
-# Loading work.i2cmaster(rtl)
-# Loading work.gen_sclk(rtl)
+# Loading work.test_gen_square(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.gen_square(rtl)
+run
 add wave -position insertpoint  \
-sim:/test_i2c_master/clk \
-sim:/test_i2c_master/rst \
-sim:/test_i2c_master/sclk \
-sim:/test_i2c_master/sdat \
-sim:/test_i2c_master/load \
-sim:/test_i2c_master/addr \
-sim:/test_i2c_master/data \
-sim:/test_i2c_master/busy \
-sim:/test_i2c_master/sclk_cnt \
-sim:/test_i2c_master/sclk_shift \
-sim:/test_i2c_master/recv_data
-run -all
-# ** Failure: end.
-#    Time: 376020 ns  Iteration: 0  Process: /test_i2c_master/line__61 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Break in Process line__61 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl line 83
-add wave -position insertpoint  \
-sim:/test_i2c_master/U1/fms_shift_reg_stat
-add wave -position insertpoint  \
-sim:/test_i2c_master/U1/fms_i2c_master_status
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Failure: end.
-#    Time: 376020 ns  Iteration: 0  Process: /test_i2c_master/line__61 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Break in Process line__61 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl line 83
-add wave -position insertpoint  \
-sim:/test_i2c_master/U1/shift_reg \
-sim:/test_i2c_master/U1/shift_data
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Failure: end.
-#    Time: 376020 ns  Iteration: 0  Process: /test_i2c_master/line__61 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Break in Process line__61 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl line 83
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
+sim:/test_gen_square/clk \
+sim:/test_gen_square/f \
+sim:/test_gen_square/q
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:01:15 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl 
+# Start time: 16:25:55 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity i2cmaster
-# -- Compiling architecture RTL of i2cmaster
-# End time: 22:01:15 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.i2cmaster(rtl)
-run -all
-# ** Failure: end.
-#    Time: 376020 ns  Iteration: 0  Process: /test_i2c_master/line__61 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Break in Process line__61 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl line 83
-add wave -position insertpoint  \
-sim:/test_i2c_master/U1/send_bit
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Failure: end.
-#    Time: 376020 ns  Iteration: 0  Process: /test_i2c_master/line__61 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Break in Process line__61 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl line 83
-add wave -position end  sim:/test_i2c_master/U1/shift_cnt
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Failure: end.
-#    Time: 376020 ns  Iteration: 0  Process: /test_i2c_master/line__61 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Break in Process line__61 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl line 83
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:10:12 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity i2cmaster
-# -- Compiling architecture RTL of i2cmaster
-# End time: 22:10:12 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-run -all
-# ** Failure: end.
-#    Time: 376020 ns  Iteration: 0  Process: /test_i2c_master/line__61 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Break in Process line__61 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl line 83
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:10:41 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity i2cmaster
-# -- Compiling architecture RTL of i2cmaster
-# End time: 22:10:41 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.i2cmaster(rtl)
-run -all
-# ** Failure: end.
-#    Time: 376020 ns  Iteration: 0  Process: /test_i2c_master/line__61 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Break in Process line__61 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl line 83
-add wave -position end  sim:/test_i2c_master/U1/U1/sdat
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:21:54 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity i2cmaster
-# -- Compiling architecture RTL of i2cmaster
-# End time: 22:21:54 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:22:00 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity test_i2c_master
-# -- Compiling architecture SIM of test_i2c_master
-# End time: 22:22:00 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.test_i2c_master(sim)
-# Loading work.i2cmaster(rtl)
-run -all
-# ** Failure: end.
-#    Time: 376020 ns  Iteration: 0  Process: /test_i2c_master/line__62 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Break in Process line__62 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl line 84
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:29:55 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity i2cmaster
-# -- Compiling architecture RTL of i2cmaster
-# End time: 22:29:55 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.i2cmaster(rtl)
-run -all
-add wave -position insertpoint  \
-sim:/test_i2c_master/U1/sclk_ena
-restart
-run -all
-add wave -position end  sim:/test_i2c_master/U1/U1/fms_status
-restart
-run -all
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:18:16 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/i2cmaster.vhdl 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity i2cmaster
-# -- Compiling architecture RTL of i2cmaster
-# End time: 23:18:16 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:18:26 on May 22,2021
-# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity test_i2c_master
-# -- Compiling architecture SIM of test_i2c_master
-# End time: 23:18:26 on May 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.test_i2c_master(sim)
-# Loading work.i2cmaster(rtl)
-run -all
-# ** Failure: end.
-#    Time: 376020 ns  Iteration: 0  Process: /test_i2c_master/line__62 File: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl
-# Break in Process line__62 at /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_i2c_master.vhdl line 84
-# End time: 23:23:57 on May 22,2021, Elapsed time: 1:39:05
+# -- Compiling entity test_gen_square
+# -- Compiling architecture SIM of test_gen_square
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd(17): Integer literal 440 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd(27): VHDL Compiler exiting
+# End time: 16:25:55 on Jun 06,2021, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:26:41 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity test_gen_square
+# -- Compiling architecture SIM of test_gen_square
+# ** Error: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd(17): near "d": Decimal bit string literals not supported for this language version.
+# ** Error (suppressible): /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd(17): (vcom-1272) Length of expected is 16; length of actual is 9.
+# ** Note: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd(27): VHDL Compiler exiting
+# End time: 16:26:41 on Jun 06,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# Modified modelsim.ini
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:28:02 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity test_gen_square
+# -- Compiling architecture SIM of test_gen_square
+# ** Error (suppressible): /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd(17): (vcom-1272) Length of expected is 16; length of actual is 9.
+# ** Note: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd(27): VHDL Compiler exiting
+# End time: 16:28:02 on Jun 06,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+run
+restart
+run
+add wave -position 0  sim:/test_gen_square/clk
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:31:19 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity test_gen_square
+# -- Compiling architecture SIM of test_gen_square
+# ** Error (suppressible): /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd(17): (vcom-1272) Length of expected is 16; length of actual is 9.
+# ** Note: /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd(27): VHDL Compiler exiting
+# End time: 16:31:19 on Jun 06,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:31:26 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity gen_square
+# -- Compiling architecture RTL of gen_square
+# End time: 16:31:26 on Jun 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.gen_square(rtl)
+run
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:35:23 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/test/test_gen_square.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity test_gen_square
+# -- Compiling architecture SIM of test_gen_square
+# End time: 16:35:23 on Jun 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.test_gen_square(sim)
+run
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/test_gen_square/U1/clk_cnt \
+sim:/test_gen_square/U1/clk_65535hz \
+sim:/test_gen_square/U1/f_cnt
+add wave -position insertpoint  \
+sim:/test_gen_square/U1/f_cnt
+restart
+run
+vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:40:02 on Jun 06,2021
+# vcom -reportprogress 300 -work work /windrv/edrv/intelFPGA_lite/DE1SOC/sound/vhdl/osc_square.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity gen_square
+# -- Compiling architecture RTL of gen_square
+# End time: 16:40:02 on Jun 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.gen_square(rtl)
+run
+restart
+run
+# End time: 16:57:00 on Jun 06,2021, Elapsed time: 0:32:32
+# Errors: 0, Warnings: 0

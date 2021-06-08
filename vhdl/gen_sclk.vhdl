@@ -6,6 +6,7 @@ entity gen_sclk is
    port (   clk:    in      std_logic;  -- master clock(100MHz)
             rst:    in      std_logic;  
             ena:    in      std_logic; 
+            busy:   out     std_logic;
             sclk:   inout   std_logic;
             sdat:   out     std_logic;  -- for start and stop condition
             can_data_change: out std_logic
@@ -13,7 +14,7 @@ entity gen_sclk is
 end gen_sclk;
 
 architecture RTL of gen_sclk is
-    type fms_status_t is (idle, start_cond1, start_cond2, run, end_cond);
+    type fms_status_t is (idle, start_cond1, start_cond2, run, end_cond1, end_cond2);
     signal fms_status: fms_status_t;
     constant data_hold:  integer := 90;
     constant start_setup: integer := 60;
@@ -55,11 +56,15 @@ begin
                             fms_status <= run;
                         end if;
                     when run =>
-                        if (ena = '0') then
-                            fms_status <= end_cond;
+                        if ((ena = '0') and (sclk_cnt > sclk_half_period)) then
+                            fms_status <= end_cond1;
                         end if;
-                    when end_cond =>
+                    when end_cond1 =>
                         if (sclk_cnt = start_setup) then
+                            fms_status <= end_cond2;
+                        end if;
+                    when end_cond2 =>
+                        if (sclk_cnt = sclk_half_period / 2) then
                             fms_status <= idle;
                         end if;
                 end case;
@@ -69,7 +74,8 @@ begin
     
     sclk <= '0' when sclk_cnt >= sclk_half_period else 'Z';
     sdat <= '0' when fms_status = start_cond2 else
-            '0' when fms_status = end_cond else
+            '0' when fms_status = end_cond1 else
             'Z';
     can_data_change <= '1' when fms_status = run and sclk_cnt = sclk_half_period+data_hold else '0';
+    busy <= '1' when fms_status /= idle else '0';
 end RTL;

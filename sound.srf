@@ -1,0 +1,2 @@
+{ "" "" "" "Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature." {  } {  } 0 292013 "" 0 0 "Design Software" 0 -1 0 ""}
+{ "" "" "" "Current license file does not support incremental compilation. The Quartus Prime software removes all the user-specified design partitions in the design automatically." {  } {  } 0 138067 "" 0 0 "Design Software" 0 -1 0 ""}
