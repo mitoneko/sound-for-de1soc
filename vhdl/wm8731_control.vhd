@@ -68,7 +68,7 @@ begin
                     when init1 =>
                         if (status_i2c = idle) then
                             aud_addr <= b"000_0010";
-                            aud_data <= b"01" & b"111_1110";  
+                            aud_data <= b"01" & b"110_1111";  
                         elsif (status_i2c = end_seq) then
                             status_8731 <= init2;
                         end if;

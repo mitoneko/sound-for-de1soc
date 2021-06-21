@@ -161,6 +161,14 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw[0]
 set_instance_assignment -name MATCH_PLL_COMPENSATION_CLOCK ON -to "master_pll:pll_master|master_pll_0002:master_pll_inst|altera_pll:altera_pll_i|outclk_wire[0]"
+set_global_assignment -name SMART_RECOMPILE ON
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to "master_pll:pll_master|master_pll_0002:master_pll_inst|altera_pll:altera_pll_i|outclk_wire[0]"
+set_global_assignment -name ROUTER_CLOCKING_TOPOLOGY_ANALYSIS ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING ON
+set_global_assignment -name VHDL_FILE vhdl/osc_sin.vhd
+set_global_assignment -name VHDL_FILE vhdl/osc_sawtooth.vhd
+set_global_assignment -name VHDL_FILE vhdl/osc_triangle.vhd
+set_global_assignment -name VHDL_FILE vhdl/gen_clk_65535hz.vhd
 set_global_assignment -name VHDL_FILE vhdl/osc_square.vhd
 set_global_assignment -name VHDL_FILE vhdl/wm8731_i2s.vhdl
 set_global_assignment -name VHDL_FILE vhdl/wm8731_control.vhd
@@ -173,4 +181,8 @@ set_global_assignment -name QIP_FILE ip/master_pll.qip
 set_global_assignment -name SIP_FILE ip/master_pll.sip
 set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
 set_global_assignment -name SDC_FILE sound.sdc
+set_global_assignment -name MIF_FILE sound.mif
+set_global_assignment -name QIP_FILE ip/noteno.qip
+set_global_assignment -name QIP_FILE ip/sin_arl.qip
+set_global_assignment -name QIP_FILE ip/siny1.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,6 +1,7 @@
 # clock
 create_clock -name clk50 -period 20.000 [get_ports {clk50}]
 derive_pll_clocks
+create_generated_clock -name clk65k -source [get_pins {pll_master|master_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk}] -divide_by 1526 -duty_cycle 50 [get_nets {clk_osc|q}]
 derive_clock_uncertainty
 
 # io

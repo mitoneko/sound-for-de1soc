@@ -1,0 +1,153 @@
+-- Copyright (C) 2020  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=18;
+DEPTH=128;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=UNS;
+
+CONTENT BEGIN
+0 : 131072;
+1 : 131072;
+2 : 131072;
+3 : 131072;
+4 : 131072;
+5 : 131072;
+6 : 131072;
+7 : 131072;
+8 : 131072;
+9 : 131072;
+10 : 131072;
+11 : 131072;
+12 : 131072;
+13 : 131072;
+14 : 131072;
+15 : 131072;
+16 : 131072;
+17 : 131072;
+18 : 131072;
+19 : 131072;
+20 : 131072;
+21 : 131072;
+22 : 131071;
+23 : 131071;
+24 : 131071;
+25 : 131071;
+26 : 131071;
+27 : 131071;
+28 : 131071;
+29 : 131071;
+30 : 131071;
+31 : 131071;
+32 : 131070;
+33 : 131070;
+34 : 131070;
+35 : 131070;
+36 : 131069;
+37 : 131069;
+38 : 131069;
+39 : 131068;
+40 : 131068;
+41 : 131067;
+42 : 131067;
+43 : 131066;
+44 : 131066;
+45 : 131065;
+46 : 131064;
+47 : 131063;
+48 : 131062;
+49 : 131060;
+50 : 131059;
+51 : 131057;
+52 : 131056;
+53 : 131054;
+54 : 131051;
+55 : 131049;
+56 : 131046;
+57 : 131043;
+58 : 131039;
+59 : 131035;
+60 : 131031;
+61 : 131026;
+62 : 131020;
+63 : 131014;
+64 : 131007;
+65 : 130999;
+66 : 130990;
+67 : 130979;
+68 : 130968;
+69 : 130955;
+70 : 130941;
+71 : 130925;
+72 : 130907;
+73 : 130887;
+74 : 130864;
+75 : 130839;
+76 : 130810;
+77 : 130778;
+78 : 130742;
+79 : 130702;
+80 : 130657;
+81 : 130606;
+82 : 130549;
+83 : 130485;
+84 : 130413;
+85 : 130332;
+86 : 130242;
+87 : 130140;
+88 : 130026;
+89 : 129898;
+90 : 129755;
+91 : 129594;
+92 : 129413;
+93 : 129210;
+94 : 128983;
+95 : 128728;
+96 : 128442;
+97 : 128121;
+98 : 127761;
+99 : 127358;
+100 : 126905;
+101 : 126398;
+102 : 125830;
+103 : 125192;
+104 : 124478;
+105 : 123679;
+106 : 122783;
+107 : 121780;
+108 : 120657;
+109 : 119401;
+110 : 117996;
+111 : 116425;
+112 : 114670;
+113 : 112710;
+114 : 110522;
+115 : 108081;
+116 : 105361;
+117 : 102333;
+118 : 98964;
+119 : 95221;
+120 : 91069;
+121 : 86467;
+122 : 81378;
+123 : 75759;
+124 : 69569;
+125 : 62768;
+126 : 55314;
+127 : 47174;
+END;

@@ -1,0 +1,153 @@
+-- Copyright (C) 2020  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=128;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=UNS;
+
+CONTENT BEGIN
+0 : 51;
+1 : 54;
+2 : 58;
+3 : 61;
+4 : 65;
+5 : 69;
+6 : 73;
+7 : 77;
+8 : 82;
+9 : 86;
+10 : 92;
+11 : 97;
+12 : 103;
+13 : 109;
+14 : 115;
+15 : 122;
+16 : 129;
+17 : 137;
+18 : 145;
+19 : 154;
+20 : 163;
+21 : 173;
+22 : 183;
+23 : 194;
+24 : 205;
+25 : 218;
+26 : 231;
+27 : 244;
+28 : 259;
+29 : 274;
+30 : 291;
+31 : 308;
+32 : 326;
+33 : 346;
+34 : 366;
+35 : 388;
+36 : 411;
+37 : 435;
+38 : 461;
+39 : 489;
+40 : 518;
+41 : 549;
+42 : 581;
+43 : 616;
+44 : 652;
+45 : 691;
+46 : 732;
+47 : 776;
+48 : 822;
+49 : 871;
+50 : 923;
+51 : 977;
+52 : 1036;
+53 : 1097;
+54 : 1162;
+55 : 1231;
+56 : 1305;
+57 : 1382;
+58 : 1464;
+59 : 1551;
+60 : 1644;
+61 : 1741;
+62 : 1845;
+63 : 1955;
+64 : 2071;
+65 : 2194;
+66 : 2324;
+67 : 2462;
+68 : 2609;
+69 : 2764;
+70 : 2928;
+71 : 3102;
+72 : 3286;
+73 : 3482;
+74 : 3688;
+75 : 3907;
+76 : 4139;
+77 : 4385;
+78 : 4646;
+79 : 4921;
+80 : 5213;
+81 : 5523;
+82 : 5850;
+83 : 6197;
+84 : 6564;
+85 : 6953;
+86 : 7365;
+87 : 7801;
+88 : 8262;
+89 : 8751;
+90 : 9268;
+91 : 9815;
+92 : 10394;
+93 : 11006;
+94 : 11654;
+95 : 12339;
+96 : 13063;
+97 : 13828;
+98 : 14637;
+99 : 15491;
+100 : 16393;
+101 : 17345;
+102 : 18349;
+103 : 19408;
+104 : 20524;
+105 : 21699;
+106 : 22936;
+107 : 24236;
+108 : 25601;
+109 : 27033;
+110 : 28534;
+111 : 30104;
+112 : 31744;
+113 : 33453;
+114 : 35231;
+115 : 37075;
+116 : 38984;
+117 : 40951;
+118 : 42971;
+119 : 45035;
+120 : 47134;
+121 : 49253;
+122 : 51375;
+123 : 53480;
+124 : 55543;
+125 : 57533;
+126 : 59414;
+127 : 61144;
+END;

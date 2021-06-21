@@ -64,14 +64,51 @@ architecture RTL of sound is
             );
     end component;
 
+    component gen_clk_65536hz is
+        port (  clk:    in  std_logic;
+                q:      out std_logic
+            );
+    end component;
+
     component osc_square is
        port (
-            clk:    in  std_logic;
+            clk_s:    in  std_logic;
             f:      in  std_logic_vector(15 downto 0);
             q:      out std_logic_vector(15 downto 0)
         );
     end component;
     
+    component osc_triangle is
+        port (  clk_s:  in  std_logic;
+                f:      in  std_logic_vector(15 downto 0);
+                q:      out std_logic_vector(15 downto 0)
+            );
+    end component;
+
+    component osc_sawtooth is
+        port (  clk_s:  in  std_logic;
+                f:      in  std_logic_vector(15 downto 0);
+                q:      out std_logic_vector(15 downto 0)
+            );
+    end component;
+
+    component osc_sin is
+        port (   clk:       in  std_logic;
+                 clk_s:     in  std_logic;
+                 toneno:    in  std_logic_vector(6 downto 0);
+                 q:         out std_logic_vector(15 downto 0)
+             );
+    end component;
+
+    component noteno IS
+        PORT
+        (
+            address		: IN STD_LOGIC_VECTOR (6 DOWNTO 0);
+            clock		: IN STD_LOGIC  := '1';
+            q		: OUT STD_LOGIC_VECTOR (13 DOWNTO 0)
+        );
+    END component;
+
     -- master clock control
     signal clk:         std_logic; -- master system clock(100MHz)
     signal rst:         std_logic; -- master system reset signal
@@ -82,10 +119,17 @@ architecture RTL of sound is
     signal wm8731_ctrl_busy: std_logic;
     signal wave_dat: std_logic_vector(15 downto 0);
 
+    -- noteno input
+    signal freq: std_logic_vector(15 downto 0);
+
+    -- clock for osc
+    signal clock_osc: std_logic;
+
     -- osc square
     signal q_square: std_logic_vector(15 downto 0);
-    signal freq_square: std_logic_vector(15 downto 0);
-    signal freq_buff: std_logic_vector(15 downto 0);
+    signal q_triangle: std_logic_vector(15 downto 0);
+    signal q_sawtooth: std_logic_vector(15 downto 0);
+    signal q_sin: std_logic_vector(15 downto 0);
     
 begin
     --master clock conotrol
@@ -98,27 +142,24 @@ begin
     wm8731_i2s1: wm8731_i2s port map(clk=>clk, rst=>rst, aud_bclk=>aud_bclk, daclrck=>daclrck, 
                                      dacdat=>dacdat, wave_dat=>wave_dat);
 
-    -- osc kari(440Hz)
-    osc1: osc_square port map(clk=>clk, f=>freq_square, q=>q_square);
-    wave_dat <= q_square;
+    -- noteno to frequency
+    trance_freq: noteno port map (address => sw(6 downto 0), clock=>clk, q=>freq(13 downto 0));
+    freq(15 downto 14) <= "00";
 
-    process(clk)
-    begin
-        if (clk'event and clk='1') then
-            if (rst = '1') then
-                freq_buff <= 16d"440";
-                freq_square <= 16d"440";
-            elsif (key(1) = '0') then
-                freq_buff(7 downto 0) <= sw(7 downto 0);
-            elsif (key(2) = '0') then
-                freq_buff(15 downto 8) <= sw(7 downto 0);
-            elsif (key(3) = '0') then
-                freq_square <= freq_buff;
-            end if;
-        end if;
-    end process;
+    -- osc kari(440Hz)
+    clk_osc: gen_clk_65536hz port map(clk=>clk, q=>clock_osc);
+    osc_s: osc_square port map(clk_s=>clock_osc, f=>freq, q=>q_square);
+    osc_t: osc_triangle port map(clk_s=>clock_osc, f=>freq, q=>q_triangle);
+    osc_sow: osc_sawtooth port map(clk_s=>clock_osc, f=>freq, q=>q_sawtooth);
+    osc_sin1: osc_sin port map(clk=>clk, clk_s=>clock_osc, toneno=>sw(6 downto 0), q=>q_sin);
+    with sw(9 downto 8) select
+        wave_dat <= q_sin       when "00",
+                    q_triangle  when "01",
+                    q_sawtooth  when "10",
+                    q_square    when "11",
+                    (others => 'X') when others;
 
     -- print etc.
-    led(9 downto 0) <= freq_square(9 downto 0); 
+    led(9 downto 0) <= freq(9 downto 0); 
 
 end RTL;
