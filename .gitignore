@@ -3,5 +3,7 @@
 /ip/
 /output_files/
 /simulation/
+vhdl/vsim.wlf
+/vhdl/work/
 *.bak
 
