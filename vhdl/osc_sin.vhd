@@ -5,7 +5,7 @@ use IEEE.numeric_std.all;
 entity osc_sin is
     port (   clk:       in  std_logic;
              clk_s:     in  std_logic;
-             toneno:    in  std_logic_vector(6 downto 0);
+             noteno:    in  std_logic_vector(6 downto 0);
              q:         out std_logic_vector(15 downto 0)
          );
 end osc_sin;
@@ -43,8 +43,8 @@ architecture RTL of osc_sin is
     constant min_y: signed(18 downto 0) := b"111_0000_0000_0000_0001";
 
 begin
-    mem_arl: sin_arl port map(address=>toneno, clock=>clk, q=>arl_tmp);
-    mem_y1:  siny1  port map(address=>toneno, clock=>clk, q=>y1_tmp);
+    mem_arl: sin_arl port map(address=>noteno, clock=>clk, q=>arl_tmp);
+    mem_y1:  siny1  port map(address=>noteno, clock=>clk, q=>y1_tmp);
     arl <= signed('0' & arl_tmp);
     y1_i <= signed("000" & y1_tmp);
 
